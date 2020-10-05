@@ -11,9 +11,9 @@ public class Camion extends Vehiculo {
     private int ejes;
     protected static ArrayList<Vehiculo> listado = new ArrayList<>();
 
-    public Camion(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puertas) {
+    public Camion(String placa, String nombre, int precio, int peso, Fabricante fabricante, int ejes) {
         super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);
-        this.puertas = puertas;
+        this.ejes = ejes;
         this.listado.add(this);
     }
 
