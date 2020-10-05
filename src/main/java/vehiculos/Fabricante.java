@@ -28,7 +28,7 @@ public class Fabricante {
             for (int j = 0; j < listado.size(); j++) {
                 contador = 0;
                 Fabricante compare = listado.get(j);
-                if (actual == compare) {
+                if (actual.nombre == compare.nombre) {
                     contador++;
                 }
             }
