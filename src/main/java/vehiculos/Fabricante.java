@@ -33,6 +33,7 @@ public class Fabricante {
                 }
             }
             if (contador > maxVentas) {
+                maxVentas = contador;
                 masVendedor = listado.get(i);
             }
         }
