@@ -30,7 +30,7 @@ public class Pais {
                     contador++;
                 }
             }
-            if(contador>maxVentas){
+            if(contador>=maxVentas){
                 masVendedor = listado.get(i);
             }
         }
