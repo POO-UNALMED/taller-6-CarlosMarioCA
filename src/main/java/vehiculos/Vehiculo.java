@@ -28,6 +28,13 @@ public class Vehiculo {
         this.traccion = traccion;
         this.fabricante = fabricante;
         this.cantidadVehiculos++;
+        
+        aduana(fabricante);
+    }
+    
+    public void aduana(Fabricante fabricante){
+        Fabricante.listado.add(fabricante);
+        Pais.listado.add(fabricante.pais);
     }
 
     public void vehiculosPorTipo() {

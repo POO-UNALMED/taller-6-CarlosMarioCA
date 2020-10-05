@@ -16,7 +16,26 @@ public class Pais {
         this.listado.add(this);
     }
     
-    
+    public static Pais paisMasVendedor(){
+        Pais masVendedor = null;
+        int contador;
+        int maxVentas = 0;
+        for(int i = 0; i < listado.size(); i++){
+            contador = 0;
+            Pais actual = listado.get(i);
+            for(int j = 0; j < listado.size(); j++){
+                contador = 0;
+                Pais compare = listado.get(j);
+                if(actual == compare){
+                    contador++;
+                }
+            }
+            if(contador>maxVentas){
+                masVendedor = listado.get(i);
+            }
+        }
+        return masVendedor;
+    }
 
     public String getNombre() {
         return nombre;
@@ -26,5 +45,8 @@ public class Pais {
         this.nombre = nombre;
     }
     
+    public static void aduana(){
+        
+    }
     
 }
