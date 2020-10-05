@@ -24,9 +24,8 @@ public class Pais {
             contador = 0;
             Pais actual = listado.get(i);
             for(int j = 0; j < listado.size(); j++){
-                contador = 0;
                 Pais compare = listado.get(j);
-                if(actual == compare){
+                if(actual.equals(compare)){
                     contador++;
                 }
             }
