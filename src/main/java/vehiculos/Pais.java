@@ -25,11 +25,12 @@ public class Pais {
             Pais actual = listado.get(i);
             for(int j = 0; j < listado.size(); j++){
                 Pais compare = listado.get(j);
-                if(actual.equals(compare)){
+                if(actual.nombre == compare.nombre){
                     contador++;
                 }
             }
-            if(contador>=maxVentas){
+            if(contador >= maxVentas){
+                maxVentas = contador;
                 masVendedor = listado.get(i);
             }
         }
